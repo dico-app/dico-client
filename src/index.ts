@@ -1,1 +1,2 @@
-export const createDico = "";
+export * from "./createDico";
+export * from "./DicoError";
