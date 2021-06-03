@@ -1,0 +1,16 @@
+{
+  "dico": "my-dico",
+  "sources": [
+    "src/**/*.(js|jsx)",
+    "src/**/*.(ts|tsx)",
+    "src/**/*.vue"
+  ],
+  "schema": {
+    "baz": "",
+    "foo": {
+      "bar": ""
+    },
+    "login": ""
+  },
+  "updated_at": "2021-06-03T11:34:31.304324+00:00"
+}
