@@ -86,17 +86,14 @@ const createInfiniteDico = <T extends DicoDataJSON>(
  *
  * @returns The `$dico` object
  */
-export const createDico = <
-	DicoData extends DicoDataJSON = DicoDataJSON,
-	ExplicitLocaleEnum extends string[] = DicoData["locale"]["locales"]
->(
+export const createDico = <DicoData extends DicoDataJSON = DicoDataJSON>(
 	dicoData: DicoData
 ): {
-	$dicoI18n: I18nManager<DicoData["locale"], ExplicitLocaleEnum>;
+	$dicoI18n: I18nManager<DicoData["locale"]>;
 	$dico: CreateInfiniteDicoData<DicoData["data"]>;
 } => {
-	const $dicoI18n = new I18nManager<DicoData["locale"], ExplicitLocaleEnum>(
-		dicoData.locale as Readonly<DicoData["locale"]>
+	const $dicoI18n = new I18nManager<DicoData["locale"]>(
+		dicoData.locale as DicoData["locale"]
 	);
 
 	const $dico = createInfiniteDico<DicoData>($dicoI18n, dicoData.data);

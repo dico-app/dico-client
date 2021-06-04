@@ -22,12 +22,12 @@ export type CreateInfiniteDicoData<T extends { [key: string]: unknown }> = {
 
 export interface DicoDataJSON<
 	MasterLocale extends string = string,
-	AllLocales extends string[] = string[],
+	AllLocales extends { [key: string]: string } = { [key: string]: string },
 	DicoData extends UnknownDicoData = UnknownDicoData
 > {
 	locale: {
 		master: MasterLocale;
-		locales: (AllLocales[number] | MasterLocale)[];
+		locales: AllLocales;
 	};
 	data: DicoData;
 }

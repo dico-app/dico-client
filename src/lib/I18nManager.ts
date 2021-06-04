@@ -1,30 +1,25 @@
+import { DicoError } from "../DicoError";
+import { UnknownLocale } from "../messages";
 import { DicoDataJSON } from "../types";
 
-export class I18nManager<
-	T extends DicoDataJSON["locale"],
-	E extends string[] = T["locales"]
-> {
+export class I18nManager<T extends DicoDataJSON["locale"]> {
 	public master: T["master"];
-	public locales: { [key in E[number]]: E[number] };
-	public currentLocal: T["locales"][number];
+	public locales: T["locales"];
+	public currentLocal: keyof T["locales"];
 
-	constructor(locale: T) {
-		this.master = locale.master;
+	constructor({ master, locales }: T) {
+		this.master = master;
 
-		// Turn ["a", "b", "c"] into { a: "a", b: "b", c: "c" }
-		this.locales = locale.locales.reduce<{ [key in E[number]]: E[number] }>(
-			(acc, current) => {
-				acc[current as E[number]] = current;
+		this.locales = locales;
 
-				return acc;
-			},
-			{} as { [key in E[number]]: E[number] }
-		);
-
-		this.currentLocal = locale.master;
+		this.currentLocal = master;
 	}
 
-	public setLocale(locale: E[number]): void {
-		this.currentLocal = locale;
+	public setLocale(locale: string): void {
+		if (locale in this.locales) {
+			this.currentLocal = locale;
+		} else {
+			throw new DicoError(UnknownLocale(locale, this.locales));
+		}
 	}
 }
