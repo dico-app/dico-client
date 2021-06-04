@@ -1,6 +1,22 @@
 {
-	"foo": {
-		"bar": "barValue"
+	"locale": {
+		"master": "en-us",
+		"locales": ["en-us", "fr-fr"]
 	},
-	"baz": "bazValue"
+	"data": {
+		"foo": {
+			"bar": {
+				"___key": {
+					"en-us": "barValueEn",
+					"fr-fr": "barValueFr"
+				}
+			}
+		},
+		"baz": {
+			"___key": {
+				"en-us": "bazValueEn",
+				"fr-fr": "bazValueFr"
+			}
+		}
+	}
 }
