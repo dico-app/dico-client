@@ -49,8 +49,10 @@
   "dependencies": {
     "chalk": "^4.1.1",
     "consola": "^2.15.3",
+    "detect-indent": "6.1.0",
     "exit": "^0.1.2",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "rc9": "1.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "12.1.4",

@@ -1,21 +1,161 @@
 {
 	"locale": {
 		"master": "en-us",
-		"locales": { "en-us": "en-us", "fr-fr": "fr-fr" }
+		"locales": {
+			"en-us": "en-us",
+			"fr-fr": "fr-fr"
+		}
 	},
 	"data": {
-		"foo": {
+		"js": {
+			"foo": {
+				"___key": {}
+			},
 			"bar": {
-				"___key": {
-					"en-us": "barValueEn",
-					"fr-fr": "barValueFr"
+				"___key": {}
+			},
+			"nested": {
+				"foo": {
+					"___key": {}
+				},
+				"bar": {
+					"___key": {}
+				}
+			}
+		},
+		"jsx": {
+			"foo": {
+				"___key": {}
+			},
+			"bar": {
+				"___key": {}
+			},
+			"nested": {
+				"foo": {
+					"___key": {}
+				},
+				"bar": {
+					"___key": {}
+				}
+			}
+		},
+		"ts": {
+			"foo": {
+				"___key": {}
+			},
+			"bar": {
+				"___key": {}
+			},
+			"nested": {
+				"foo": {
+					"___key": {}
+				},
+				"bar": {
+					"___key": {}
+				}
+			}
+		},
+		"tsx": {
+			"foo": {
+				"___key": {}
+			},
+			"bar": {
+				"___key": {}
+			},
+			"nested": {
+				"foo": {
+					"___key": {}
+				},
+				"bar": {
+					"___key": {}
+				}
+			}
+		},
+		"vue": {
+			"foo": {
+				"___key": {}
+			},
+			"bar": {
+				"___key": {}
+			},
+			"nested": {
+				"foo": {
+					"___key": {}
+				},
+				"bar": {
+					"___key": {}
 				}
 			}
 		},
 		"baz": {
-			"___key": {
-				"en-us": "bazValueEn",
-				"fr-fr": "bazValueFr"
+			"___key": {}
+		},
+		"login": {
+			"___key": {}
+		},
+		"foo": {
+			"baz": {
+				"___key": {}
+			},
+			"bar": {
+				"___key": {
+					"en-us": "fooooo",
+					"fr-fr": "barrrr"
+				}
+			}
+		},
+		"form": {
+			"login": {
+				"username-label": {
+					"___key": {}
+				},
+				"username-placeholder": {
+					"___key": {}
+				},
+				"password-label": {
+					"___key": {}
+				},
+				"password-placeholder": {
+					"___key": {}
+				}
+			},
+			"signup": {
+				"username-label": {
+					"___key": {}
+				},
+				"username-placeholder": {
+					"___key": {}
+				},
+				"password-label": {
+					"___key": {}
+				},
+				"password-placeholder": {
+					"___key": {}
+				}
+			}
+		},
+		"errors": {
+			"login": {
+				"wrong-password": {
+					"___key": {}
+				},
+				"not-math-username": {
+					"___key": {}
+				},
+				"password-helper": {
+					"___key": {}
+				}
+			},
+			"signup": {
+				"invalid-password": {
+					"___key": {}
+				},
+				"username-already-exist": {
+					"___key": {}
+				},
+				"password-helper": {
+					"___key": {}
+				}
 			}
 		}
 	}
