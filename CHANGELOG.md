@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/dico-app/dico-client/compare/v0.0.3...v0.0.4) (2021-06-07)
+
+
+### Features
+
+* export I18nManager and CreateInfiniteDicoData ([91aaf04](https://github.com/dico-app/dico-client/commit/91aaf049c608286bf24b7c95d3071202e81fa916))
+
+
+### Bug Fixes
+
+* handle JSON.stringify method ([879b4a0](https://github.com/dico-app/dico-client/commit/879b4a0be4792b6ade3349eec343f868671046a4))
+
+
+### Chore
+
+* **deps:** maintain dependencies ([492db1a](https://github.com/dico-app/dico-client/commit/492db1a98b410775d56847ce5717c27630aa0385))
+
 ### [0.0.3](https://github.com/dico-app/dico-client/compare/v0.0.2...v0.0.3) (2021-06-07)
 
 
