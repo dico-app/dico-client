@@ -16,7 +16,7 @@ assignees: ""
 
 ### Versions
 
-- @dico/cli: <!-- ex: v0.1.0 -->
+- @dico/client: <!-- ex: v0.1.0 -->
 - node: <!-- ex: v12.14.0 -->
 
 ### Reproduction
