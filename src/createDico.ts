@@ -1,6 +1,6 @@
 import { DICO_KEY_RESERVED_KEY } from "./const";
 import { DicoError } from "./DicoError";
-import { I18nManager } from "./lib/I18nManager";
+import { I18nManager } from "./I18nManager";
 import { CannotSetDicoData } from "./messages";
 import { CreateInfiniteDicoData, DicoDataJSON, UnknownDicoData } from "./types";
 
