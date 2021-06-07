@@ -18,6 +18,8 @@ const infinite = (key: string): UnknownDicoData =>
 			get(target, key, _) {
 				if (key === Symbol.toPrimitive) {
 					return () => `$dico.${target.key}`;
+				} else if (key === "toJSON") {
+					return () => `$dico.${target.key}`;
 				}
 
 				return infinite(key.toString());
@@ -63,7 +65,7 @@ const createInfiniteDico = <T extends DicoDataJSON>(
 						) {
 							return dicoKey[i18nManager.master];
 						} else {
-							return `$dico.${key.toString()}`;
+							return `"$dico.${key.toString()}"`;
 						}
 					} else {
 						return createInfiniteDico(i18nManager, result);
