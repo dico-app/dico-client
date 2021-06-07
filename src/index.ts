@@ -1,5 +1,5 @@
 export * from "./createDico";
-export * from "./fetchDicoInternalHandler";
 export * from "./DicoError";
+export * from "./I18nManager";
 
-export type { DicoDataJSON } from "./types";
+export type { DicoDataJSON, CreateInfiniteDicoData } from "./types";

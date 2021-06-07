@@ -1,82 +1,82 @@
 {
-	"name": "@dico/client",
-	"version": "0.0.3",
-	"description": "Dico.app Client",
-	"keywords": [
-		"dico",
-		"client",
-		"management"
-	],
-	"repository": {
-		"type": "git",
-		"url": "ssh://git@github.com/dico-app/dico-client.git"
-	},
-	"license": "MIT",
-	"author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
-	"exports": {
-		".": {
-			"require": "./dist/index.js",
-			"import": "./dist/index.es.js"
-		},
-		"./package.json": "./package.json"
-	},
-	"main": "dist/index.js",
-	"module": "dist/index.es.js",
-	"types": "dist/index.d.ts",
-	"bin": {
-		"dico-fetch": "bin/cli.js"
-	},
-	"files": [
-		"bin",
-		"dist"
-	],
-	"scripts": {
-		"build": "siroc build",
-		"dev": "siroc build --watch",
-		"ts": "node -r ts-eager/register",
-		"release": "yarn build && yarn test && standard-version && git push --follow-tags && yarn build && npm publish",
-		"release:dry": "yarn build && yarn test && standard-version --dry-run",
-		"lint": "eslint --ext .js,.ts .",
-		"unit": "nyc --reporter=lcovonly --reporter=text --exclude-after-remap=false ava",
-		"test": "yarn lint && yarn unit"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn lint",
-			"commit-msg": "commitlint --env HUSKY_GIT_PARAMS"
-		}
-	},
-	"dependencies": {
-		"consola": "^2.15.3",
-		"detect-indent": "^6.1.0",
-		"exit": "^0.1.2",
-		"node-fetch": "^2.6.1",
-		"rc9": "^1.2.0"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "12.1.4",
-		"@commitlint/config-conventional": "12.1.4",
-		"@types/exit": "0.1.31",
-		"@types/node-fetch": "2.5.10",
-		"@typescript-eslint/eslint-plugin": "4.26.0",
-		"@typescript-eslint/parser": "4.26.0",
-		"ava": "3.15.0",
-		"eslint": "7.28.0",
-		"eslint-config-prettier": "8.3.0",
-		"eslint-plugin-prettier": "3.4.0",
-		"husky": "4.3.8",
-		"nyc": "15.1.0",
-		"prettier": "2.3.1",
-		"siroc": "0.11.0",
-		"standard-version": "9.3.0",
-		"ts-eager": "2.0.2",
-		"ts-essentials": "7.0.1",
-		"typescript": "4.3.2"
-	},
-	"engines": {
-		"node": ">=12.0.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@dico/client",
+  "version": "0.0.3",
+  "description": "Dico.app Client",
+  "keywords": [
+    "dico",
+    "client",
+    "management"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/dico-app/dico-client.git"
+  },
+  "license": "MIT",
+  "author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.es.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "dico-fetch": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "siroc build",
+    "dev": "siroc build --watch",
+    "ts": "node -r ts-eager/register",
+    "release": "yarn build && yarn test && standard-version && git push --follow-tags && yarn build && npm publish",
+    "release:dry": "yarn build && yarn test && standard-version --dry-run",
+    "lint": "eslint --ext .js,.ts .",
+    "unit": "nyc --reporter=lcovonly --reporter=text --exclude-after-remap=false ava",
+    "test": "yarn lint && yarn unit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "commit-msg": "commitlint --env HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "consola": "^2.15.3",
+    "detect-indent": "^6.1.0",
+    "exit": "^0.1.2",
+    "node-fetch": "^2.6.1",
+    "rc9": "^1.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "@types/exit": "0.1.31",
+    "@types/node-fetch": "2.5.10",
+    "@typescript-eslint/eslint-plugin": "4.26.0",
+    "@typescript-eslint/parser": "4.26.0",
+    "ava": "3.15.0",
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "husky": "4.3.8",
+    "nyc": "15.1.0",
+    "prettier": "2.3.1",
+    "siroc": "0.11.0",
+    "standard-version": "9.3.0",
+    "ts-eager": "2.0.2",
+    "ts-essentials": "7.0.1",
+    "typescript": "4.3.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
