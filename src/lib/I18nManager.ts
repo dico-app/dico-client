@@ -16,10 +16,10 @@ export class I18nManager<T extends DicoDataJSON["locale"]> {
 	}
 
 	public setLocale(locale: string): void {
-		if (locale in this.locales) {
-			this.currentLocal = locale;
-		} else {
-			throw new DicoError(UnknownLocale(locale, this.locales));
+		if (!(locale in this.locales)) {
+			console.warn(UnknownLocale(locale, this.locales));
 		}
+
+		this.currentLocal = locale;
 	}
 }

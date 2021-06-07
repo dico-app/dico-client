@@ -84,7 +84,7 @@ const createInfiniteDico = <T extends DicoDataJSON>(
  *
  * @param dicoData - Dico data from a dico.data.json
  *
- * @returns The `$dico` object
+ * @returns The `$dico` object and `$dicoI18n` class instance
  */
 export const createDico = <DicoData extends DicoDataJSON = DicoDataJSON>(
 	dicoData: DicoData

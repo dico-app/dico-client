@@ -5,6 +5,6 @@ export const UnknownLocale = (
 	locale: string,
 	locales: { [key: string]: string }
 ): string =>
-	`Unknown locale \`${locale}\`, locale must be one of: ${Object.keys(locales)
+	`Unknown locale \`${locale}\`, locale should be one of: ${Object.keys(locales)
 		.map(i => `\`${i}\``)
 		.join(", ")}`;
