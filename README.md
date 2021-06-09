@@ -10,7 +10,7 @@
 [Dico.app][dico] Client.
 
 - 🔑 &nbsp;Use keys seamlessly;
-- 🎏 &nbsp;Fetch your current dico.
+- 🎏 &nbsp;Fetch your current dico;
 - 🌐 &nbsp;i18n support.
 
 ## Install
