@@ -34,7 +34,7 @@ To discover what's new on this package check out [the changelog][changelog]. For
 <!-- Links -->
 
 [dico]: https://dico.app
-[dico-docs]: https://docs.dico.io/client
+[dico-docs]: https://docs.dico.io/references/client
 [changelog]: /CHANGELOG.md
 
 <!-- Badges -->
