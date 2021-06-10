@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/dico-app/dico-client/compare/v0.0.5...v0.0.6) (2021-06-10)
+
+
+### Bug Fixes
+
+* typo on currentLocale ([59dc1fb](https://github.com/dico-app/dico-client/commit/59dc1fbb60de2921ae2fcc8b9d0407668a895fae))
+
+
+### Documentation
+
+* fix domain ([5c39e83](https://github.com/dico-app/dico-client/commit/5c39e83066e24882e1f6b5768adc70de911ec666))
+* update doc ([14106ba](https://github.com/dico-app/dico-client/commit/14106ba1f7caee3122b27f6d027b90d987f9bc75))
+
 ### [0.0.5](https://github.com/dico-app/dico-client/compare/v0.0.4...v0.0.5) (2021-06-09)
 
 
