@@ -21,7 +21,27 @@ npm install @dico/client
 
 ## Usage
 
-<!-- TODO: Update -->
+Update your scripts inside your `package.json`:
+
+```javascript
+{
+    /* ... */
+    "scripts": {
+        "dev": "dico-fetch && ...",
+        "build": "dico-fetch && ..."
+    }
+}
+```
+
+Init dico client:
+
+```javascript
+import { createDico } from "@dico/client";
+// Dico data file is created next to your `dico.config.json` file
+import data from "../dico.data.json";
+
+export const { $dico, $dicoI18n } = createDico(data);
+```
 
 ## Documentation
 
@@ -34,7 +54,7 @@ To discover what's new on this package check out [the changelog][changelog]. For
 <!-- Links -->
 
 [dico]: https://dico.app
-[dico-docs]: https://docs.dico.app/references/client
+[dico-docs]: https://docs.dico.app/installing-the-client
 [changelog]: /CHANGELOG.md
 
 <!-- Badges -->
