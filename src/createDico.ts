@@ -55,10 +55,10 @@ const createInfiniteDico = <T extends DicoDataJSON>(
 					if (DICO_KEY_RESERVED_KEY in result) {
 						const dicoKey = result[DICO_KEY_RESERVED_KEY];
 						if (
-							i18nManager.currentLocal in dicoKey &&
-							dicoKey[i18nManager.currentLocal]
+							i18nManager.currentLocale in dicoKey &&
+							dicoKey[i18nManager.currentLocale]
 						) {
-							return dicoKey[i18nManager.currentLocal];
+							return dicoKey[i18nManager.currentLocale];
 						} else if (
 							i18nManager.master in dicoKey &&
 							dicoKey[i18nManager.master]

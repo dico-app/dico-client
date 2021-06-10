@@ -7,14 +7,14 @@ import { DicoDataJSON } from "./types";
 export class I18nManager<T extends DicoDataJSON["locale"]> {
 	public master: T["master"];
 	public locales: T["locales"];
-	public currentLocal: keyof T["locales"];
+	public currentLocale: keyof T["locales"];
 
 	constructor({ master, locales }: T) {
 		this.master = master;
 
 		this.locales = locales;
 
-		this.currentLocal = master;
+		this.currentLocale = master;
 	}
 
 	/**
@@ -32,6 +32,6 @@ export class I18nManager<T extends DicoDataJSON["locale"]> {
 			console.warn(UnknownLocale(locale, this.locales));
 		}
 
-		this.currentLocal = locale;
+		this.currentLocale = locale;
 	}
 }
