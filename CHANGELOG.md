@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/dico-app/dico-client/compare/v0.0.6...v0.0.7) (2021-06-29)
+
+
+### Features
+
+* add output path option ([2f29731](https://github.com/dico-app/dico-client/commit/2f2973175b977f6585e4aa3562c4ede7ca3e9286))
+
 ### [0.0.6](https://github.com/dico-app/dico-client/compare/v0.0.5...v0.0.6) (2021-06-10)
 
 
