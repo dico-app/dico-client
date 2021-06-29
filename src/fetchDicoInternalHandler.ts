@@ -14,10 +14,14 @@ import { lineBreak, logger } from "./lib";
  * Fetch dico internal handler
  *
  * @param base - Base directory where `dico.config.json` and `dico.data.json` can be found
+ * @param output - Output directory relative to base where `dico.data.json` can be found
  *
  * @internal
  */
-export const fetchDicoInternalHandler = async (base = "./"): Promise<void> => {
+export const fetchDicoInternalHandler = async (
+	base = "./",
+	output = "./"
+): Promise<void> => {
 	const configPath = path.join(process.cwd(), base, CONFIG_FILE);
 	if (!fs.existsSync(configPath)) {
 		throw new DicoError(messages.ConfigFileNotFound(configPath));
@@ -54,7 +58,7 @@ export const fetchDicoInternalHandler = async (base = "./"): Promise<void> => {
 		lineBreak();
 	}
 
-	const dataPath = path.join(process.cwd(), base, DATA_FILE);
+	const dataPath = path.join(process.cwd(), base, output, DATA_FILE);
 	let indent = "  ";
 	if (fs.existsSync(dataPath)) {
 		indent = detectIndent(fs.readFileSync(dataPath, "utf8")).indent || "  ";

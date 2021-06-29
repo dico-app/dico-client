@@ -8,13 +8,18 @@ const run = async (): Promise<void> => {
 	const args = process.argv.slice(2);
 
 	let base = "./";
+	let output = "./";
 
 	if (args.length) {
 		base = args[0];
+
+		if (args[1]) {
+			output = args[1];
+		}
 	}
 
 	try {
-		await fetchDicoInternalHandler(base);
+		await fetchDicoInternalHandler(base, output);
 	} catch (error) {
 		if (error instanceof DicoError) {
 			logger.error(error);
